@@ -80,8 +80,9 @@ html,body{height:100%}
 .navbar .subnav_con .subnav{position:absolute;left:0;top:40px;display:none;border-top:2px solid  #39a93e;}
 .navbar .subnav_con:hover .subnav{display:block;}
 
-/*主页商品分类 新添加*/
-.center_con .subnav_2{position:absolute;display:none;left:0;top:40px;border-top:2px solid  #39a93e;}
+/*主页商品分类 新添加 --书法-- */
+.center_con .subnav .calligraphy_list{position:absolute;display:none;left:80px;top:40px;border-top:2px solid  #39a93e;}
+.center_con .subnav .calligraphy:hover .calligraphy_list{display:block;}
 
 
 .navlist{margin-left:34px;}
@@ -98,12 +99,10 @@ html,body{height:100%}
 .subnav li a:hover{color:#ff8800}
 
 /*主页商品分类 新添加*/
-.center_con .subnav #subnav_2:hover .center_con .subnav_2{display:block;}
-/*主页商品分类 新添加*/
-.subnav_2{width:198px;height:270px;border-left:1px solid #eee;border-right:1px solid #eee;}
-.subnav_2 li{height:44px;background: 178px -257px no-repeat #fff;}
-.subnav_2 li a{display:block;height:44px;line-height:44px;text-indent:71px;font-size:14px;color:#333}
-.subnav_2 li a:hover{color:#ff8800}
+.calligraphy_list{width:198px;height:270px;border-left:1px solid #eee;border-right:1px solid #eee;}
+.calligraphy_list li{height:44px;background: 178px -257px no-repeat #fff;}
+.calligraphy_list li a{display:block;height:44px;line-height:44px;text-indent:71px;font-size:14px;color:#333}
+.calligraphy_list li a:hover{color:#ff8800}
 
 .subnav li .fruit{background:url(../images/icons.png) 28px 0px no-repeat;}
 .subnav li .seafood{background:url(../images/icons.png) 28px -43px no-repeat;}
