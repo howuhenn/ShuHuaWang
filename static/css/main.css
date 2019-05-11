@@ -81,7 +81,7 @@ html,body{height:100%}
 .navbar .subnav_con:hover .subnav{display:block;}
 
 /*主页商品分类 新添加 --书法-- */
-.center_con .subnav .calligraphy_list{position:absolute;display:none;left:80px;top:40px;border-top:2px solid  #39a93e;}
+.center_con .subnav .calligraphy_list{position:absolute;display:none;left:80px;top:40px;border-top:2px solid  #39a93e;z-index:999;}
 .center_con .subnav .calligraphy:hover .calligraphy_list{display:block;}
 
 
@@ -104,15 +104,15 @@ html,body{height:100%}
 .calligraphy_list li a{display:block;height:44px;line-height:44px;text-indent:71px;font-size:14px;color:#333}
 .calligraphy_list li a:hover{color:#ff8800}
 
-.subnav li .fruit{background:url(../images/icons.png) 28px 0px no-repeat;}
-.subnav li .seafood{background:url(../images/icons.png) 28px -43px no-repeat;}
-.subnav li .meet{background:url(../images/icons.png) 28px -86px no-repeat;}
-.subnav li .egg{background:url(../images/icons.png) 28px -132px no-repeat;}
-.subnav li .vegetables{background:url(../images/icons.png) 28px -174px no-repeat;}
-.subnav li .ice{background:url(../images/icons.png) 28px -220px no-repeat;}
+/*.subnav li .fruit{background:url(../images/icons.png) 28px 0px no-repeat;}*/
+/*.subnav li .seafood{background:url(../images/icons.png) 28px -43px no-repeat;}*/
+/*.subnav li .meet{background:url(../images/icons.png) 28px -86px no-repeat;}*/
+/*.subnav li .egg{background:url(../images/icons.png) 28px -132px no-repeat;}*/
+/*.subnav li .vegetables{background:url(../images/icons.png) 28px -174px no-repeat;}*/
+/*.subnav li .ice{background:url(../images/icons.png) 28px -220px no-repeat;}*/
 
 
-.slide{width:760px;height:270px;position:relative;overflow:hidden;}
+.slide{width:760px;height:270px;position:relative;overflow:hidden;z-index:998}
 .slide .slide_pics{position:relative;left:0;top:0;width:760px;height:270px;}
 .slide .slide_pics li{width:760px;height:270px;position:absolute;left:0;top:0}
 .slide .prev,.slide .next{width:17px;height:23px;background:url(../images/icons.png) left -388px no-repeat;position:absolute;left:11px;top:122px;cursor:pointer;}
