@@ -9,8 +9,9 @@ from django.db import models
 from django.contrib.auth.models import AbstractUser
 from db.base_model import BaseModel
 
+
 class User(AbstractUser, BaseModel):
-    '''用户模型类'''
+    """用户模型类"""
 
     class Meta:
         db_table = 'shw_user'
@@ -19,7 +20,7 @@ class User(AbstractUser, BaseModel):
 
 
 class Address(BaseModel):
-    '''地址模型类'''
+    """地址模型类"""
 
     user = models.ForeignKey('User', verbose_name='所属用户')
     province = models.CharField(max_length=6, verbose_name='省编号')
@@ -35,6 +36,19 @@ class Address(BaseModel):
     class Meta:
         db_table = 'shw_address'
         verbose_name = '地址'
+        verbose_name_plural = verbose_name
+
+
+class Area(models.Model):
+    """区域code"""
+
+    code = models.CharField(max_length=6, verbose_name='区域code', primary_key=True)
+    area_name = models.CharField(max_length=20, verbose_name='区域名称')
+    in_code = models.CharField(max_length=6, verbose_name='所属区域code')
+
+    class Meta:
+        db_table = 'shw_area'
+        verbose_name = '区域'
         verbose_name_plural = verbose_name
 
 
