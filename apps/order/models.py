@@ -9,7 +9,6 @@ from django.db import models
 from db.base_model import BaseModel
 
 
-
 class OrderInfo(BaseModel):
     """订单模型类"""
     PAY_METHODS = {
@@ -64,6 +63,7 @@ class OrderInfo(BaseModel):
     transit_price = models.DecimalField(max_digits=10, decimal_places=2, verbose_name='订单运费')
     order_status = models.SmallIntegerField(choices=ORDER_STATUS_CHOICES, default=1, verbose_name='订单状态')
     trade_no = models.CharField(max_length=128, default='', verbose_name='支付编号')
+    transport_no = models.CharField(max_length=15, verbose_name='快递单号')
 
     class Meta:
         db_table = 'df_order_info'
@@ -75,7 +75,7 @@ class OrderGoods(BaseModel):
     """订单商品模型类"""
 
     order = models.ForeignKey('OrderInfo', verbose_name='订单')
-    sku = models.ForeignKey('goods.GoodsSKU', verbose_name='商品SKU')
+    goods = models.ForeignKey('goods.Goods', verbose_name='商品')
     count = models.IntegerField(default=1, verbose_name='商品数目')
     price = models.DecimalField(max_digits=10, decimal_places=2, verbose_name='商品价格')
     comment = models.CharField(max_length=256, default='', verbose_name='评论')
@@ -84,3 +84,5 @@ class OrderGoods(BaseModel):
         db_table = 'df_order_goods'
         verbose_name = '订单商品'
         verbose_name_plural = verbose_name
+
+
