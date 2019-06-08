@@ -23,9 +23,7 @@ class Address(BaseModel):
     """地址模型类"""
 
     user = models.ForeignKey('User', verbose_name='所属用户')
-    province = models.CharField(max_length=6, verbose_name='省编号')
-    city = models.CharField(max_length=6, verbose_name='市编号')
-    area = models.CharField(max_length=6, verbose_name='区编号')
+    area_code = models.ForeignKey('Area', verbose_name='区域code')
     street = models.CharField(max_length=30, verbose_name='街道/镇')
     addr = models.CharField(max_length=256, verbose_name='详细地址')
     zip_code = models.CharField(max_length=6, verbose_name='邮政编码')
@@ -42,7 +40,7 @@ class Address(BaseModel):
 class Area(models.Model):
     """区域code"""
 
-    code = models.CharField(max_length=6, verbose_name='区域code', primary_key=True)
+    area_code = models.CharField(max_length=6, verbose_name='区域code', primary_key=True)
     area_name = models.CharField(max_length=20, verbose_name='区域名称')
     in_code = models.CharField(max_length=6, verbose_name='所属区域code')
 
