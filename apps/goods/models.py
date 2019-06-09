@@ -38,6 +38,7 @@ class Goods(BaseModel):
     unit = models.CharField(max_length=20, verbose_name='单位')
     stock = models.IntegerField(default=1, verbose_name='库存')
     sales = models.IntegerField(default=0, verbose_name='销量')
+    desc = models.CharField(max_length=256, verbose_name='商品简介')
     # 富文本类型:带有格式的文本
     detail = HTMLField(blank=True, verbose_name='详细介绍')
     shelf_time = models.DateTimeField(auto_now=True, verbose_name='上架时间')
