@@ -31,8 +31,8 @@ class Goods(BaseModel):
         (1, '上线'),
     )
 
-    user = models.ForeignKey('user.User', verbose_name='用户')
-    type = models.ForeignKey('GoodsType', verbose_name='商品种类')
+    user = models.ForeignKey('user.User', on_delete=models.CASCADE, verbose_name='用户')
+    type = models.ForeignKey('GoodsType', on_delete=models.CASCADE, verbose_name='商品种类')
     goods_name = models.CharField(max_length=20, verbose_name='商品名称')
     price = models.DecimalField(max_digits=10, decimal_places=2, verbose_name='商品价格')
     unit = models.CharField(max_length=20, verbose_name='单位')
@@ -59,7 +59,7 @@ class GoodsEva(BaseModel):
         (3, '差评'),
     )
 
-    goods = models.ForeignKey('Goods', verbose_name='商品')
+    goods = models.ForeignKey('Goods', on_delete=models.CASCADE, verbose_name='商品')
     access = models.CharField(max_length=256, verbose_name='评价内容')
     access_level = models.SmallIntegerField(default=1, choices=access_level_choices, verbose_name='商品评价')
 
@@ -72,7 +72,7 @@ class GoodsEva(BaseModel):
 class GoodsImage(BaseModel):
     """商品图片模型类"""
 
-    goods = models.ForeignKey('Goods', verbose_name='商品')
+    goods = models.ForeignKey('Goods', on_delete=models.CASCADE, verbose_name='商品')
     image = models.ImageField(upload_to='goods', verbose_name='图片路径')
 
     class Meta:
