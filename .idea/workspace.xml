@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8d3d4c5-dfd9-4d7a-a33a-af44e87e8b73" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/user/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShuHuaWang/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ShuHuaWang/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShuHuaWang/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ShuHuaWang/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/cart/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/goods/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/goods/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/order/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/order/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/user/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/user/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/base_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/db/base_model.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -197,12 +185,7 @@
               <item name="ShuHuaWang" type="b2602c69:ProjectViewProjectNode" />
               <item name="ShuHuaWang" type="462c0819:PsiDirectoryNode" />
               <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ShuHuaWang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ShuHuaWang" type="462c0819:PsiDirectoryNode" />
-              <item name="ShuHuaWang" type="462c0819:PsiDirectoryNode" />
+              <item name="cart" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -331,7 +314,14 @@
       <option name="project" value="LOCAL" />
       <updated>1560090522755</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="up">
+      <created>1561907039495</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1561907039495</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -356,22 +346,21 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.2662069" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50080776" side_tool="true" weight="0.4" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.2910345" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32965517" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32965517" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32965517" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27382874" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27382874" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.20597738" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49919224" visible="true" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
