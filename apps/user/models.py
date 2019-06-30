@@ -22,8 +22,8 @@ class User(AbstractUser, BaseModel):
 class Address(BaseModel):
     """地址模型类"""
 
-    user = models.ForeignKey('User', verbose_name='所属用户')
-    area_code = models.ForeignKey('Area', verbose_name='区域code')
+    user = models.ForeignKey('User', on_delete=models.CASCADE, verbose_name='所属用户')
+    area_code = models.ForeignKey('Area', on_delete=models.CASCADE, verbose_name='区域code')
     street = models.CharField(max_length=30, verbose_name='街道/镇')
     addr = models.CharField(max_length=256, verbose_name='详细地址')
     zip_code = models.CharField(max_length=6, verbose_name='邮政编码')
